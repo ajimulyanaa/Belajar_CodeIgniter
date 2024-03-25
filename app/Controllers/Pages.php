@@ -11,10 +11,7 @@ class Pages extends BaseController
         $data=[
             'title'=>'Home'
         ];
-        echo view('layout/header',$data);
-        echo view('layout/navigation');
-        echo view('pages/home');
-        echo view('layout/footer');
+        return view('pages/home',$data);
         
     }
     public function about()
@@ -24,10 +21,32 @@ class Pages extends BaseController
         $data=[
             'title'=>'About Me'
         ];
-        echo view('layout/header',$data);
-        echo view('layout/navigation');
-        echo view('pages/about');
-        echo view('layout/footer');
+        return view('pages/about',$data);
+        
+    }
+    public function contact()
+    {
+        // return view('pages/about');
+        // untuk mengirimkan data pada title
+        $data=[
+            'title'=>'Contact Me',
+            'alamat'=>[
+                [
+                    'tipe'=>'Rumah',
+                    'alamat'=>'Jl.kedong no.20',
+                ]
+                ,
+                [
+                    'tipe'=>'Kantor',
+                    'alamat'=>'Jl.bandara no.20',
+                ],
+                [
+                    'tipe'=>'Kosan',
+                    'alamat'=>'Jl.jagakarsa no.501',
+                ]
+            ]
+        ];
+        return view('pages/contact',$data);
         
     }
 

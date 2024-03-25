@@ -7,7 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 // agar bisa mengakses router di url
 $routes->setAutoRoute(true);
-
+// akses pages
 $routes->get('/', 'Home::index');
 $routes->get('/pages/home', 'Pages::home');
 $routes->get('/pages/about', 'Pages::about');
+$routes->get('/pages/contact', 'Pages::contact');
