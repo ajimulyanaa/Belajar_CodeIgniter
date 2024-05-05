@@ -12,3 +12,5 @@ $routes->get('/', 'Home::index');
 $routes->get('/pages/home', 'Pages::home');
 $routes->get('/pages/about', 'Pages::about');
 $routes->get('/pages/contact', 'Pages::contact');
+// akses komik
+$routes->get('/komik/index', 'Komik::index');

@@ -11,6 +11,7 @@
         <a class="nav-link active" aria-current="page" href="/pages/home">Home</a>
         <a class="nav-link" href="/pages/about">About</a>
         <a class="nav-link" href="/pages/contact">Contact</a>
+        <a class="nav-link" href="/komik/index">Komik</a>
         <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
       </div>
     </div>
